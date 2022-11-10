@@ -4,7 +4,7 @@ body {
     font-family: Lato, sans-serif;
     font-size: xx-large;
     line-height: 1.5;
-    background: #afc68b;
+    /* background: #1f2833; */
     padding: 1em;
     text-align: center;
   }
@@ -16,13 +16,13 @@ body {
   .container{width: 70%;
     max-width: 1100px;
     margin: 0 auto;
-    background: rgb(137, 163, 128);
+    /* background: #66fcf1; */
     padding: 20px;
 
   }
   button{
     color: rgb(15, 13, 13);
-    background: #c9d7b6;
+    /* background: #42a29e; */
     font-family: Lato, sans-serif;
     font-size: 1.3em;
     border: none;
@@ -31,4 +31,19 @@ body {
     outline: 0;
     align-self: center;
   }
-  
+  .btn-container {
+            margin: 10px 0;
+  }
+  .submitbutton{
+    color: rgb(15, 13, 13);
+   
+    font-family: Lato, sans-serif;
+    font-size: medium;
+    border: none;
+    padding: 6px 3px;
+    cursor: pointer;
+    outline: 2;
+    align-self: center;
+    /* background-color: #45A29E; */
+    ;
+  }
