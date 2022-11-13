@@ -34,6 +34,10 @@ input:hover {
     box-shadow: 0 0 4px rgb(41, 4, 164);
 }
 
+input:focus::placeholder {
+    color: transparent;
+}
+
 button {
     background-color: rgb(68, 18, 232);
     color: white;
@@ -43,23 +47,12 @@ button {
     box-sizing: border-box;
     border: none;
     width: 20ch;
+    font-family: 'Source Code Pro', monospace;
 }
 
 button:hover {
     cursor: pointer;
     background-color: rgb(41, 4, 164);
-}
-
-@media screen and (max-width: 600px) {
-    form {
-        width: 25rem;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    form {
-        width: 20rem;
-    }
 }
 
 .icon {
@@ -99,4 +92,10 @@ button:hover {
 .sign-in:hover::before {
     transform-origin: left;
     transform: scaleX(1);
+}
+
+.icon {
+    margin-left: 9.5ch;
+    font-size: 5ch;
+    margin-top: 1.5ch;
 }

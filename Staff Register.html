@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staff | Register</title>
+    <link rel="icon" type="image/x-icon" href="./Register fevicon.png">
+    <link rel="stylesheet" href="./Register.css">
+    <script src="https://kit.fontawesome.com/0c7f9f833c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="icon" href="./welcome.html">
+            <i class="fa-brands fa-quinscape"></i>
+        </a>
+
+        <p>
+            Already have an account?
+            <a class="sign-in" href="./Staff login .html">Login in</a>
+        </p>
+    </div>
+
+    <form onSubmit="return checkPassword(this)" action="./Staff login .html">
+
+        <div class="container">
+            <p style="text-align:center; font-size: 2.5ch;">Create your account</p>
+
+            <br>
+
+            <input type="text" placeholder="Name" name="First name" required />
+
+            <input type="text" placeholder="E-mail" name="email" required/>
+
+            <input type=password placeholder="Password" name=password1 required />
+
+            <input type=password placeholder="Confirm password" name=password2 required />
+
+            <br><br>
+
+            <button>Register</button>
+
+        </div>
+
+    </form>
+    <script src="./Staff Register.js"></script>
+
+</body>
+
+</html>
