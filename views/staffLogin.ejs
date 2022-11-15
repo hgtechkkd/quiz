@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff | Login</title>
+    <link rel="icon" type="image/x-icon" href="/images/Login fevicon .png">
+    <link rel="stylesheet" href="/css/Login .css">
+    <script src="https://kit.fontawesome.com/0c7f9f833c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="icon">
+        <a style="color:black;" href="/">
+            <i class="fa-brands fa-quinscape"></i>
+        </a>
+    </div>
+
+    <h1>Staff Login</h1>
+
+    <form action="./Staff Home.html" method="get">
+
+        <div class="mainContainer">
+
+            <input type="text" placeholder="Email Address" name="Email" title="Invalid email address" required>
+            <br><br>
+            <input style="position: absolute; width: 24%;" type="password" id="myInput" placeholder="Password" required>
+            <i title="Show Password" onclick="myFunction()" id="eye-icon" class="far fa-eye" id="togglePassword"></i>
+
+            <!--<div class="subcontainer">
+                <label>
+                    <input type="checkbox" checked="checked" name="remember">Remember me
+                </label>
+                <p class="forgotpsd"> <a href="">Forgot Password?</a></p>
+            </div>-->
+
+            <button>Login</button>
+
+            <p style="margin-left: 7ch;">Not a member? <a class="register" href="/staffRegister">Register
+                    here!</a></p>
+
+        </div>
+
+    </form>
+    <script src="/js/Staff login.js"></script>
+</body>
+
+</html>
