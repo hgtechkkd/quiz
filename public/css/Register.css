@@ -5,13 +5,26 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
 
-form {
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5ch 15ch;
+}
+
+.icon {
+    color: black;
+    font-size: 5ch;
+}
+
+.container {
+    text-align: center;
     width: 25rem;
     margin: auto;
     background-color: white;
     border-radius: 12px;
     padding: 20px 25px;
-    margin-top: 8ch;
+    margin-top: 4ch;
 }
 
 input {
@@ -55,27 +68,13 @@ button:hover {
     background-color: rgb(41, 4, 164);
 }
 
-.icon {
-    margin-left: 9.5ch;
-    font-size: 5ch;
-    color: black;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 2.5ch;
-    margin-right: 15ch;
-}
-
-.sign-in {
+.sign {
     position: relative;
     text-decoration: none;
     color: rgb(68, 18, 232);
 }
 
-.sign-in::before {
+.sign::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -89,13 +88,8 @@ button:hover {
     transition: transform .3s ease-in-out;
 }
 
-.sign-in:hover::before {
+.sign:hover::before {
     transform-origin: left;
     transform: scaleX(1);
 }
 
-.icon {
-    margin-left: 9.5ch;
-    font-size: 5ch;
-    margin-top: 1.5ch;
-}

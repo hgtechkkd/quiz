@@ -5,40 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Staff | Home</title>
-    <link rel="icon" type="image/x-icon" href="/images/Home fevicon.png">
-    <link rel="stylesheet" href="/css/Staff Home.css">
+    <link rel="icon" type="image/x-icon" href="./public/images/Home fevicon.png">
+    <link rel="stylesheet" href="./public/css/home.css">
     <script src="https://kit.fontawesome.com/0c7f9f833c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-        <a class="icon" href="/staffHome">
-            <i class="fa-brands fa-quinscape"></i>
+    <div class="navbar-top">
+        <h1>Staff</h1>
+        <a class="icon" href="">
+            <i style="color:white; font-size: 6ch; " class="fa-brands fa-quinscape"></i>
         </a>
-    <div class="container"></div>
-    <h1 style="text-align:center;">Staff Homepage</h1>
-    <br><br><br>
-    <form id="upload_form" enctype="multipart/form-data" name="file">
-        <h2 style="display: block ; text-align:center; margin-bottom:3ch ">Welcome</h2>
-        <div style="margin-left: 10ch;">
-            <div class="admin-icons">
+        <ul>
+            <li>
+                <a href="./staff profile.html">
+                    <i title="Profile" class="fa-solid fa-user"></i>
+                </a>
+                <a href="./welcome.html">
+                    <i title="Logout" class="fa-solid fa-right-from-bracket"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
 
-                <i id="admin-icons" class="fa-solid fa-square-poll-horizontal"></i>
-                <i id="admin-icons" class="fa-solid fa-upload"></i>
-                <i id="admin-icons" class="fa-solid fa-user"></i>
-            </div>
 
-            <ul>
-                <li><a href=""><button>Results</button></a></li>
-                <li><a href="">
-                    <input type="file" id="fileinput">
-                    <button type="submit">Upload</button></a></li>
-                <li><a href=""><button>Profile</button></a></li>
-                <br>
-            </ul>
+    <div class="main">
+
+        <h1>Welcome</h1>
+        <br>
+        <a class="option" href="">Student Report</a>
+        <br><br>
+        <a class="option" type="submit" onclick="openPopup()">Upload</a>
+        <br><br>
+        <div action="" class="popup" id="popup">
+            <input type="file" id="fileinput" multiple />
+            <button type="submit" onclick="closePopup()">Upload</button>
         </div>
-    </form>
-    <script src="/js/Staff Home.js"></script>
+
+    </div>
+
+    <script src="./public/js/staff home.js"></script>
 
 </body>
 
