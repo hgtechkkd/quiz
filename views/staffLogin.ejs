@@ -5,28 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Staff | Login</title>
-    <link rel="icon" type="image/x-icon" href="/images/Login fevicon .png">
-    <link rel="stylesheet" href="/css/Login .css">
+    <link rel="icon" type="image/x-icon" href="./public/images/Login fevicon .png">
+    <link rel="stylesheet" href="./public/css/login .css">
     <script src="https://kit.fontawesome.com/0c7f9f833c.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-    <div class="icon">
-        <a style="color:black;" href="/">
+    <div class="navbar" style="margin: 5ch 20ch;">
+
+        <a style="font-size: 5ch;color: black;" href="./welcome.html">
             <i class="fa-brands fa-quinscape"></i>
         </a>
+
     </div>
 
-    <h1>Staff Login</h1>
 
-    <form action="./Staff Home.html" method="get">
+    <div class="container">
 
-        <div class="mainContainer">
+        <form action="./Staff Home.html" method="get">
 
+            <h1>Login</h1>
+            <br>
             <input type="text" placeholder="Email Address" name="Email" title="Invalid email address" required>
             <br><br>
-            <input style="position: absolute; width: 24%;" type="password" id="myInput" placeholder="Password" required>
+            <input style="position: absolute; width: 25rem;" type="password" id="myInput" placeholder="Password" required>
             <i title="Show Password" onclick="myFunction()" id="eye-icon" class="far fa-eye" id="togglePassword"></i>
 
             <!--<div class="subcontainer">
@@ -38,13 +41,19 @@
 
             <button>Login</button>
 
-            <p style="margin-left: 7ch;">Not a member? <a class="register" href="/staffRegister">Register
-                    here!</a></p>
+            <p style="margin-left: 7ch;">
+                Not a member?
+                <a class="register" href="./Staff Register.html">
+                    Register here!
+                </a>
+            </p>
 
-        </div>
+        </form>
 
-    </form>
-    <script src="/js/Staff login.js"></script>
+    </div>
+
+    <script src="./public/js/staff login.js"></script>
+
 </body>
 
 </html>

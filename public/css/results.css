@@ -1,0 +1,130 @@
+/* Import Font Dancing Script */
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(67, 88, 124);
+    background: linear-gradient(304deg, rgba(67, 88, 124, 1) 47%, rgba(0, 141, 170, 1) 81%);
+    background-repeat: none;
+    width: 100%;
+    height: 100vh;
+    font-family: Arial;
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* NavbarTop */
+.navbar-top {
+    background-color: rgb(36, 41, 47);
+    color: whitesmoke;
+    height: 90px;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    padding-top: 25px;
+    position: absolute;
+    left: 53%;
+}
+
+.navbar-top ul {
+    margin-right: 1.5ch;
+    margin-top: 12px;
+    float: right;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 18px 50px 0 40px;
+
+}
+
+.navbar-top ul li {
+    float: left;
+}
+
+.navbar-top ul li a {
+    font-size: 3.8ch;
+    color: whitesmoke;
+    padding: 18px 24px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* End */
+
+/* Sidenav */
+.sidenav {
+    background-color: rgb(36, 41, 47);
+    color: whitesmoke;
+    border-bottom-right-radius: 25px;
+    height: 86%;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    position: absolute;
+    top: 70px;
+    width: 180px;
+}
+
+.profile {
+    margin-bottom: 20px;
+    margin-top: -12px;
+    text-align: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 1px grey;
+}
+
+/* End */
+
+/* Main */
+.main {
+    color: grey;
+    font-size: 25px;
+    position: absolute;
+    left: 36%;
+    top: 30%;
+    width: 32rem;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px 25px;
+}
+
+
+input {
+    box-sizing: border-box;
+    font-size: 2ch;
+    border: none;
+    font-family: 'Source Code Pro', monospace;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* rightnav */
+
+.rightnav {
+    text-align: center;
+    margin-top: 14ch;
+    position: absolute;
+    left: 76%;
+    background: whitesmoke;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.marks {
+    display: flex;
+    position: relative;
+    left: 17%;
+    top: 16%;
+    font-size: 3ch;
+}
+
+/* End */
