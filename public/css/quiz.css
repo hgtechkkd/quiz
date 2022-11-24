@@ -143,7 +143,7 @@ body{
     width: 145px;
 }
 .quiz_box header .timer .time_left_txt{
-    font-weight: 400;
+    font-weight: 300;
     font-size: 17px;
     user-select: none;
 }
@@ -152,12 +152,12 @@ body{
     font-weight: 500;
     height: 30px;
     width: 45px;
-    color: #fff;
+    color: rgb(243, 224, 244);
     border-radius: 5px;
     line-height: 30px;
     text-align: center;
-    background: #343a40;
-    border: 1px solid #343a40;
+    background: #314456;
+    border: 1px solid #587b9e;
     user-select: none;
 }
 .quiz_box header .time_line{
