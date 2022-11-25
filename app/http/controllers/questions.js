@@ -5,15 +5,10 @@ const { raw } = require('body-parser');
 
 function questionsController() {
     return {
-        showQuestions(req, res) {
-            Question.find({}, (err, items) => {
-                if (err) {
-                    console.log(err);
-                }
-                else {
-                    res.json({ items: items });
-                }
-            });
+        async showQue(req, res) {
+            const ques = await Question.find()
+            // console.log(ques)
+            return res.render("quiz", { ques: ques })
 
         },
         postQuestions(req, res, next) {
@@ -32,7 +27,7 @@ function questionsController() {
                         obj.explanation = jsonObj[i]['Explanation'];
                         que.push(obj);
                     }
-                    console.log(que)
+                    // console.log(que)
                     Question.insertMany(que).then(function () {
                         res.status(200).send({
                             message: "Successfully Uploaded!"

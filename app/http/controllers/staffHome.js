@@ -1,4 +1,4 @@
-function profileController(){
+function staffHomeController(){
     return {
         index(req,res){
             res.render("staffHome")
@@ -7,4 +7,4 @@ function profileController(){
 }
 
 
-module.exports = profileController
+module.exports = staffHomeController

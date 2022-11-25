@@ -6,7 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
     <link rel="stylesheet" href="./public/css/quiz.css">
-    <link rel="icon" type="image/x-icon" href="./public/images/quiz fevicon.png">
+    <link rel="icon" type="image/x-icon" href="/images/quiz fevicon.png">
+
+    <!-- <style>
+        /* Styling the Body element i.e. Color,
+        Font, Alignment */
+        body {
+            background-color: #d1ddd7;
+            font-family: Verdana;
+            text-align: center;
+        }
+
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Styling form-control input,
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+
+        /* Styling form-control Radio
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        /* Styling Button */
+        button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style> -->
 </head>
 
 <body>
@@ -32,14 +97,71 @@
         <header>
             <div class="title">JavaScript</div>
 
+            <!-- Create Form -->
+            <form id="form">
+
+                <!-- Details -->
+                <div class="form-control">
+                    <label for="starting time" id="label-start">
+                        enter the time you started the test
+                    </label>
+
+                    <!-- Input Type Text -->
+                    <input type="text" id="start" placeholder="Enter exact time" />
+                </div>
+
+                <div class="form-control">
+                    <label for="ending time" id="label-end">
+                        Enter the time you ended the test
+                    </label>
+
+                    <!-- Input Type Email-->
+                    <input type="text" id="end" placeholder="Enter exact time" />
+                </div>
+
+                <% ques.forEach(function(que){ %>
+
+                    <div class="form-control">
+                        <label>
+                            <small>
+                                <%= que.question %>
+                            </small>
+                        </label>
+                        <!-- Input Type Checkbox -->
+                        <label for="inp-1">
+                            <input type="checkbox" name="inp">
+                            <%= que.optionA %></input>
+                        </label>
+                        <label for="inp-2">
+                            <input type="checkbox" name="inp">
+                            <%= que.optionB %></input>
+                        </label>
+                        <label for="inp-3">
+                            <input type="checkbox" name="inp">
+                            <%= que.optionC %></input>
+                        </label>
+                        <label for="inp-4">
+                            <input type="checkbox" name="inp">
+                            <%= que.optionD %></input>
+                        </label>
+
+                    </div>
+
+                    })
+
+                        <!-- Multi-line Text Input Control -->
+                        <button type="submit" value="submit">
+                            Submit
+                        </button>
+            </form>
+
             <!-- here insert timer -->
-            div class="timer">
+
+            <div class="timer">
                 <div class="time_left_text">Time Left</div>
                 <div class="timer_sec">15</div>
-            </div> 
+            </div>
             <div class="time_line"></div>
-        </header>
-    </div>
 
         </header>
     </div>
@@ -49,13 +171,14 @@
 
         <div class="complete_text">You've completed the Quiz</div>
         <div class="complete_text">Please check your results in homepage</div>
-    
+
         <div class="exit">
-            <a href="./student home.html"><button class="quit">Exit</button></a>
+            <a href="/studentHome"><button class="quit">Exit</button></a>
         </div>
     </div>
 
     <script src="./public/js/quiz.js"></script>
+
 
 </body>
 

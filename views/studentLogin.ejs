@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student | Login</title>
-    <link rel="icon" type="image/x-icon" href="./public/images/Login fevicon .png">
-    <link rel="stylesheet" href="./public/css/login .css">
+    <link rel="icon" type="image/x-icon" href="/images/Login fevicon .png">
+    <link rel="stylesheet" href="/css/login.css">
     <script src="https://kit.fontawesome.com/0c7f9f833c.js" crossorigin="anonymous"></script>
 
 </head>
@@ -15,7 +15,7 @@
 
     <div class="navbar" style="margin: 5ch 20ch;">
 
-        <a style="font-size: 5ch;color: black;" href="./welcome.html">
+        <a style="font-size: 5ch;color: black;" href="/">
             <i class="fa-brands fa-quinscape"></i>
         </a>
 
@@ -24,13 +24,14 @@
 
     <div class="container">
 
-        <form action="./student home.html" method="get">
+        <form action="/studentHome" method="get">
 
             <h1>Student Login</h1>
             <br>
             <input type="text" placeholder="Email Address" name="Email" title="Invalid email address" required>
             <br><br>
-            <input style="position: absolute; width: 25rem;" type="password" id="myInput" placeholder="Password" required>
+            <input style="position: absolute; width: 25rem;" type="password" id="myInput" placeholder="Password"
+                required>
             <i title="Show Password" onclick="myFunction()" id="eye-icon" class="far fa-eye" id="togglePassword"></i>
 
             <!--<div class="subcontainer">
@@ -44,7 +45,7 @@
 
             <p style="margin-left: 7ch;">
                 Not a member?
-                <a class="register" href="./Student Register.html">
+                <a class="register" href="/studentRegister">
                     Register here!
                 </a>
             </p>
@@ -52,7 +53,7 @@
         </form>
 
     </div>
-    <script src="./public/js/student login.js"></script>
+    <script src="/js/student login.js"></script>
 </body>
 
 </html>

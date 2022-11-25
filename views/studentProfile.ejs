@@ -3,22 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Result</title>
-    <link rel="icon" href="/images/result fevicon.png">
-    <link rel="stylesheet" href="/css/results.css">
+    <title>Student | Profile</title>
+    <link rel="icon" type="image/x-icon" href="/images/profile.png">
+    <link rel="stylesheet" href="/css/profile.css">
     <script src="https://kit.fontawesome.com/0c7f9f833c.js" crossorigin="anonymous"></script>
 </head>
 
+<!--topnav-->
+
 <body>
-    <!--topnav-->
     <div class="navbar-top">
-
-        <h1>Results</h1>
-
+        <h1>Profile</h1>
         <ul>
             <li style="margin-right: 3ch;">
+                <a href="/studentHome">
+                    <i title="Back to home" class="fa-solid fa-house"></i>
+                </a>
                 <a href="/">
                     <i title="Logout" class="fa-solid fa-right-from-bracket"></i>
                 </a>
@@ -31,34 +32,21 @@
     <div class="sidenav">
         <div class="profile">
             <img src="/images/logo.webp" alt="" width="100" height="100">
+            <p class="name">Student</p>
         </div>
     </div>
     <!-- End -->
 
     <!-- Main -->
     <div class="main">
-        <br>
-        Student name : <input type="text" id="stu-name" readonly /><br>
-        Quiz Name &nbsp&nbsp : <input type="text" id="qz-name" readonly /><br>
-        Time Taken &nbsp : <input type="text" id="time" readonly />
-
+        <form>
+            <div class="container">
+                Name &nbsp &nbsp : <input type="text" id="name" readonly /><br><br>
+                        Email Id : <input type="text" id="email" readonly />
+            </div>
+        </form>
     </div>
     <!-- End -->
-
-    <!-- rightnav -->
-
-    <div class="rightnav">
-        <p style="margin-top: 1ch ;">Score</p>
-        <div class="marks">
-            <h3></h3>
-            <h2>/30</h2>
-        </div>
-    </div>
-
-    <!-- End -->
-
-    <script src="/js/results.js"></script>
-
 </body>
 
 </html>

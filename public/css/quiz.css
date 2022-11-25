@@ -129,7 +129,8 @@ body{
     font-size: 20px;
     font-weight: 600;
 }
- 
+
+/* for timer */
 .quiz_box header .timer{
     color: #004085;
     background: #cce5ff;
@@ -169,6 +170,8 @@ body{
 
 
 }
+
+/* end */
 
 .result_box{
     background: #fff;

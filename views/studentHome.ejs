@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staff | Home</title>
+    <title>Student | Home</title>
     <link rel="icon" type="image/x-icon" href="/images/Home fevicon.png">
     <link rel="stylesheet" href="/css/home.css">
     <script src="https://kit.fontawesome.com/0c7f9f833c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
     <div class="navbar-top">
-        <h1>Staff</h1>
-        <a class="icon" href="/staffHome">
+        <h1>Student</h1>
+        <a class="icon" href="">
             <i style="color:white; font-size: 6ch; " class="fa-brands fa-quinscape"></i>
         </a>
         <ul>
             <li>
-                <a href="/staffProfile">
+                <a href="/studentProfile">
                     <i title="Profile" class="fa-solid fa-user"></i>
                 </a>
                 <a href="/">
@@ -30,26 +29,24 @@
     </div>
 
 
+
     <div class="main">
 
         <h1>Welcome</h1>
         <br>
-        <a class="option" href="/results">Student Report</a>
+        <a class="option" href="/results">Results</a>
         <br><br>
-        <a class="option" type="submit" onclick="openPopup()">Upload</a>
+        <li class=dropdown>
+            <button class="dropbtn">Start Your Quiz</button>
+            <div class="dropdown-content">
+                <a class="quiz" href="/quiz">JavaScript</a>
+                <a class="quiz" href="/quiz">MongoDB</a>
+            </div>
+        </li>
         <br><br>
-        <div action="" class="popup" id="popup">
-            <form id="upload_form" enctype="multipart/form-data" name="file">
-                <input type="file" id="fileinput" multiple />
-                <button type="submit" onclick="closePopup()">Upload</button>
-            </form>
-
-        </div>
-
     </div>
 
-    <script src="/js/staff home.js"></script>
-
+    <script src="/js/student home.js"></script>
 </body>
 
 </html>
